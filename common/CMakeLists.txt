@@ -1,9 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+project(common)
+
 # Common static library
 add_library(common STATIC
-    # Source files will be added here
+    src/file_reader.cpp
 )
 
 # Include directories for common headers
 target_include_directories(common PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
+    include
 )
