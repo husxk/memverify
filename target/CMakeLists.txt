@@ -3,7 +3,7 @@ project(target)
 
 # Target executable
 add_executable(target
-    main.cpp
+    main.c
 )
 
 # Link against common library

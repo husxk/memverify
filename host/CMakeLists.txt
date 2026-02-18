@@ -3,7 +3,7 @@ project(host)
 
 # Host executable
 add_executable(host
-    main.cpp
+    main.c
 )
 
 # Link against common library

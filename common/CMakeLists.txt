@@ -3,7 +3,7 @@ project(common)
 
 # Common static library
 add_library(common STATIC
-    src/file_reader.cpp
+    src/file_reader.c
 )
 
 # Include directories for common headers
