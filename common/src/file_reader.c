@@ -13,6 +13,9 @@ filepack_t* filepack_create_read(const char *fname)
         perror("Couldnt open file");
         return NULL;
     }
+
+    r->fno = fileno(r->f);
+
     return r;
 }
 
@@ -47,11 +50,6 @@ void print(filepack_t *r)
     while (fgets(buff, sizeof(buff), fp) != NULL) {
         printf("%s", buff);
     }
-}
-
-int ptr_to_num(filepack_t *r)
-{
-    return fileno(r->f);
 }
 
 void write_in(filepack_t *r, char* info)

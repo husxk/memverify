@@ -47,7 +47,7 @@ int main()
         return -1;
     }
 
-    while ((numRead = read(ptr_to_num(r), buf, BUF_SIZE)) > 0) 
+    while ((numRead = read(r->fno, buf, BUF_SIZE)) > 0) 
     {
         if (write(sfd, buf, numRead) != numRead) 
         {
