@@ -19,6 +19,8 @@ void filepack_delete(filepack_t *r);
 
 void print(filepack_t *r);
 
-void write(filepack_t *r, char* info);
+int ptr_to_num(filepack_t *r);
+
+void write_in(filepack_t *r, char* info);
 
 #endif

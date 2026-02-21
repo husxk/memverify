@@ -49,7 +49,12 @@ void print(filepack_t *r)
     }
 }
 
-void write(filepack_t *r, char* info)
+int ptr_to_num(filepack_t *r)
+{
+    return fileno(r->f);
+}
+
+void write_in(filepack_t *r, char* info)
 {
     fprintf(r->f, "%s\n", info);
 }
